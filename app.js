@@ -5,7 +5,7 @@ async function fetchRepositories(username, page = 1, perPage = 10) {
     return await response.json();
 }
 
-async function fetchAndDisplay(page, username = 'jatin') {
+async function fetchAndDisplay(page, username = 'johnpapa') {
     document.getElementById('repositories').innerHTML = '<div class="text-center">Loading...</div>';
     const perPage = 10;
     const repositories = await fetchRepositories(username, page, perPage);
